@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMERA SEARCH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="dist/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#logo">
+                    <img class="logo__image" src="images/common/logo.svg" alt="logo image">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Услуги</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a id="open-register-modal" class="menu__list-link" href="#">Авторизация</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Блог</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="mobile-menu-btn" href="#">
+                    <span></span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="adapt-menu-block">
+        <div class="adapt-menu__container">
+            <div class="adapt-menu">
+                <a class="adapt-menu__close-btn" href="#">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.7067 1.39544C19.0258 0.978076 18.0922 0.928141 17.4568 1.2849C17.2134 1.41356 15.8938 2.66752 13.956 4.60539L10.8321 7.72923L7.63564 4.53274C5.57841 2.47551 4.26062 1.21972 3.92769 0.995315C3.28642 0.571088 2.30453 0.503871 1.66046 0.836487C0.749285 1.30507 0.327462 2.46455 0.698127 3.47083C0.89553 3.9783 0.994329 4.0926 4.31376 7.41203L7.72335 10.8216L4.47682 14.1173C1.34656 17.2968 1.21523 17.4445 1.0846 17.903C1.00422 18.1636 1.00162 18.6416 1.05835 18.9619C1.16007 19.4667 1.24381 19.6125 1.73558 20.1042C2.22735 20.596 2.3731 20.6797 2.87789 20.7815C3.19818 20.8382 3.67616 20.8356 3.93685 20.7552C4.39533 20.6246 4.54305 20.4932 7.72249 17.363L11.0182 14.1165L14.4278 17.5261C17.7472 20.8455 17.8615 20.9443 18.369 21.1417C19.3753 21.5123 20.5347 21.0905 21.0033 20.1793C21.3359 19.5353 21.2687 18.5534 20.8445 17.9121C20.6201 17.5792 19.3643 16.2614 17.3071 14.2042L14.1106 11.0077L17.2344 7.88384C19.1723 5.94597 20.4262 4.62644 20.5549 4.38304C20.7981 3.95957 20.8542 3.11657 20.6896 2.64189C20.5423 2.2155 20.0797 1.62893 19.7067 1.39544Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+                <nav>
+                    <ul class="adapt-menu__list">
+                        <li class="adapt-menu__list-item">
+                            <a class="adapt-menu__list-link" href="#">Услуги</a>
+                        </li>
+                        <li class="adapt-menu__list-item">
+                            <a class="adapt-menu__list-link" href="#">Этапы</a>
+                        </li>
+                        <li class="adapt-menu__list-item">
+                            <a id="open-register-modal" class="adapt-menu__list-link" href="#">Авторизоваться</a>
+                        </li>
+                        <li class="adapt-menu__list-item">
+                            <a class="adapt-menu__list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="adapt-menu__login-btn" href="#">Войти</a>
+
+                <ul class="adapt-menu__contacts-list">
+                    <li class="adapt-menu__contacts-item adapt-menu__contacts-item--email">
+                        <a class="adapt-menu__contacts-link" href="#">Admin@himera-serch.info</a>
+                    </li>
+                    <li class="adapt-menu__contacts-item adapt-menu__contacts-item--tel">
+                        <a class="adapt-menu__contacts-link" href="#">Ищите нас в Telerram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="main">
+
+        <section class="offer section">
+            <div class="container">
+                <div class="offer__inner">
+                    <div class="offer__content">
+                        <h1 class="offer__title">
+                            Наведите справки <span>о ком угодно</span>
+                        </h1>
+                        <p class="offer__text">
+                            Более 9.000 актуальных баз данных в одном месте. Общее число записей - 9 млрд. Найдем
+                            информацию
+                            о любом!
+                        </p>
+                        <div class="offer__content-image">
+                            <img src="images/main-page/offer-block/offer-image.png" alt="offer image">
+                        </div>
+                        <div class="offer__buttons-block">
+                            <a id="to-reg-form" class="offer__button purple-btn" href="#form-block">
+                                Зарегистрироваться
+                            </a>
+                            <a class="offer__button white-border-btn" href="#">
+                                <svg width="33" height="28" viewBox="0 0 33 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.7796 0.153301C28.5851 0.975203 1.50826 11.5679 1.10808 11.7651C-0.215103 12.4029 -0.370012 13.2445 0.733716 13.8166C0.843443 13.8758 2.67008 14.4675 4.80654 15.1448L8.68572 16.3743L17.4897 10.7591C22.3371 7.67534 26.397 5.11101 26.5132 5.07156C26.8165 4.96635 27.0747 4.97293 27.1909 5.09786C27.2748 5.18334 27.2813 5.22279 27.2103 5.34772C27.1715 5.43319 23.9507 8.41176 20.0651 11.9624C16.1794 15.5196 12.9844 18.4521 12.9715 18.485C12.9586 18.5179 12.8295 20.2932 12.6811 22.4301L12.41 26.3095L12.7069 26.27C12.8683 26.2503 13.12 26.1648 13.2684 26.0794C13.4234 26.0004 14.4303 25.0668 15.5211 24.0082C16.6054 22.9496 17.5349 22.0619 17.5801 22.0487C17.6253 22.029 19.3551 23.2783 21.427 24.8235C23.4925 26.3687 25.3449 27.7034 25.545 27.7955C26.0678 28.0453 26.6487 28.0651 27.0295 27.8612C27.3716 27.6771 27.7008 27.2169 27.8428 26.7369C27.8945 26.5528 29.0821 20.9836 30.4698 14.3623C32.787 3.34228 33 2.27709 33 1.70505C33 1.16588 32.9806 1.03438 32.8386 0.751646C32.7418 0.547815 32.5675 0.343987 32.3997 0.225632C32.0189 -0.043951 31.3864 -0.0768318 30.7796 0.153301Z"
+                                        fill="white" />
+                                </svg>
+                                <span>Перейти в бот</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="offer__image-wrap">
+                        <img src="images/main-page/offer-block/offer-image.png" alt="offer image">
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="abilities section">
+            <div class="container">
+                <div class="abilities__inner">
+                    <h2 class="title abilities__title">
+                        На что способна <span>Himera Search? </span>
+                    </h2>
+                    <div class="abilities__items">
+                        <div class="abilities__item" data-aos="zoom-in" data-aos-duration="400">
+                            <img class="abilities__item-icon" src="images/icons/phone.svg" alt="abilities icon">
+                            <h3 class="abilities__item-title">
+                                Верификация телефона
+                            </h3>
+                            <p class="abilities__item-text">
+                                Вам звонили с незнакомого номера и вы хотели бы узнать - кто это?
+                            </p>
+                        </div>
+                        <div class="abilities__item" data-aos="zoom-in" data-aos-duration="400">
+                            <img class="abilities__item-icon" src="images/icons/email.svg" alt="abilities icon">
+                            <h3 class="abilities__item-title">
+                                Верификация E-mail
+                            </h3>
+                            <p class="abilities__item-text">
+                                Узнайте подробную информацию о том, кто пишет вам с неизвестного адреса
+                            </p>
+                        </div>
+                        <div class="abilities__item" data-aos="zoom-in" data-aos-duration="400">
+                            <img class="abilities__item-icon" src="images/icons/docs.svg" alt="abilities icon">
+                            <h3 class="abilities__item-title">
+                                Справочные данные
+                            </h3>
+                            <p class="abilities__item-text">
+                                Все ли вы знаете о человеке, который сдает вам квартиру или продает авто?
+                            </p>
+                        </div>
+                        <div class="abilities__item" data-aos="zoom-in" data-aos-duration="400">
+                            <img class="abilities__item-icon" src="images/icons/person.svg" alt="abilities icon">
+                            <h3 class="abilities__item-title">
+                                Найти человека по фото
+                            </h3>
+                            <p class="abilities__item-text">
+                                Вам нужно найти человека, но на руках лишь фотография? Для Химеры это - не проблема
+                            </p>
+                        </div>
+                        <div class="abilities__item" data-aos="zoom-in" data-aos-duration="400">
+                            <img class="abilities__item-icon" src="images/icons/deals.svg" alt="abilities icon">
+                            <h3 class="abilities__item-title">
+                                Проверить партнеров
+                            </h3>
+                            <p class="abilities__item-text">
+                                Имел ли судебные тяжбы ваш контрагент - все расскажет Химера
+                            </p>
+                        </div>
+                        <div class="abilities__item" data-aos="zoom-in" data-aos-duration="400">
+                            <img class="abilities__item-icon" src="images/icons/people.svg" alt="abilities icon">
+                            <h3 class="abilities__item-title">
+                                Работа с юрлицами
+                            </h3>
+                            <p class="abilities__item-text">
+                                Химера проверяет как физических, так и юридичнских лиц. Работа по договору
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="report section">
+            <div class="container">
+                <div class="report__inner">
+                    <h2 class="title report__title">
+                        <span>Направляя запрос HimeraSearc,</span> вы получаете подробный отчёт
+                    </h2>
+                    <div class="report__image" data-aos="fade-left">
+                        <img src="images/main-page/report-block/report-exmple-img.png" alt="report image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info section">
+            <div class="container">
+                <div class="info__inner">
+                    <h2 class="title info__title">
+                        <span>Откуда </span>информация?
+                    </h2>
+                    <h6 class="subtitle info__subtitle">
+                        Химера работает как с открытыми источниками информации <span>HUMINT</span>, так и с закрытыми
+                        <span>OSINT</span> (выкупленными конфиденциальными)
+                    </h6>
+
+                    <div class="info__items">
+
+                        <div class="info__item" data-aos="zoom-in">
+
+                            <div class="info__item-top">
+                                <h3 class="info__item-title">Humint</h3>
+                                <div class="info__item-box">
+                                    <img class="info__item-box-img" src="images/icons/lock.svg" alt="lock img">
+                                    <p class="info__item-box-text">
+                                        Конфидеиденциальные базы
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="info__item-block info__item-desc-block info__item-desc-firstBlock">
+                                Вся информация, размещенная в Humint - конфиденциальна. У вас не получится ее
+                                “загуглить”
+                                или найти еще где либо, без ведома искомого лица.
+                            </p>
+
+                            <ul class="info__item-block info__item-list">
+                                <li class="info__list-item">
+                                    Загружено более 8.000 баз данных
+                                </li>
+                                <li class="info__list-item">
+                                    Общее количество записей - более миллирда единиц
+                                </li>
+                                <li class="info__list-item">
+                                    Пополнение и обновление актуальной информации каждый квартал
+                                </li>
+                                <li class="info__list-item">
+                                    Обработка запросов происходит в режиме реального времени: то есть у вас в отчете
+                                    самая актуальная информация
+                                </li>
+                            </ul>
+
+                            <p class="info__item-block info__item-desc-block">
+                                Весь процесс поиска абсолютно автоматизирован. Вам нужен лишь гаджет с выходом в
+                                интернет
+                            </p>
+
+                        </div>
+                        <div class="info__item" data-aos="zoom-in">
+
+                            <div class="info__item-top">
+                                <h3 class="info__item-title">Osint</h3>
+                                <div class="info__item-box">
+                                    <img class="info__item-box-img" src="images/icons/unlock.svg" alt="unlock img">
+                                    <p class="info__item-box-text">Открытые источники информации</p>
+                                </div>
+                            </div>
+
+                            <p class="info__item-block info__item-desc-block info__item-desc-firstBlock">
+                                Химера включает в себя самые авторитетные и надежные базы данных, которыми пользуется
+                                государство.
+                            </p>
+
+                            <ul class="info__item-block info__item-list">
+                                <li class="info__list-item">
+                                    Регистрационные данные ЮЛ: ЕГРЮЛ, ЕГРИП. Недоимки и задолженности по пеням и штрафам
+                                </li>
+                                <li class="info__list-item">
+                                    Налоговые правонарушения - ФНС
+                                </li>
+                                <li class="info__list-item">
+                                    Россреестр, Росстат
+                                </li>
+                                <li class="info__list-item">
+                                    Реестр дисквалифицированных лиц
+                                </li>
+                                <li class="info__list-item">
+                                    Роскомнадзор
+                                </li>
+                                <li class="info__list-item">
+                                    Бухгалтерские балансы ЮЛ, отчеты об изменениях капитала
+                                </li>
+                                <li class="info__list-item">
+                                    Исполнительные производства, задолженности ФСПП
+                                </li>
+                                <li class="info__list-item">
+                                    ЕИС в сфере закупок
+                                </li>
+                                <li class="info__list-item">
+                                    ЕИС в сфере закупок
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="work-steps section">
+            <div class="container">
+                <div class="work-steps__inner">
+                    <h2 class="title work-steps__title">
+                        <span>Как это </span>работает?
+                    </h2>
+                    <h6 class="subtitle work-steps__subtitle">
+                        Вы можете воспользоваться сервисом двумя способами: <span>зарегистрировавшись на сайте</span>
+                        или
+                        через <span>ТГ-бота.</span>
+                    </h6>
+                    <div class="work-steps__items">
+                        <div class="work-steps__item" data-aos="zoom-in-up">
+                            <p class="work-steps__num">1</p>
+                            <p class="work-steps__text">
+                                Регистрируетесь на сайте или переходите в Telegram
+                            </p>
+                        </div>
+                        <div class="work-steps__item" data-aos="zoom-in-up">
+                            <p class="work-steps__num">2</p>
+                            <p class="work-steps__text">
+                                Пополняете баланс любым удобным способом
+                            </p>
+                        </div>
+                        <div class="work-steps__item" data-aos="zoom-in-up">
+                            <p class="work-steps__num">3</p>
+                            <p class="work-steps__text">
+                                Формулируете запрос HimeraSearch
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="register-ways section">
+            <div class="container">
+                <div class="register-ways__inner">
+                    <h2 class="title register-ways__title">
+                        <span>Выбирайте способ регистрации и</span> тестируйете Химеру прямо сейчас!
+                    </h2>
+                    <div class="register-ways__items">
+                        <a id="open-register-modal" class="register-ways__link" href="#">
+                            Регистрация на сайте
+                        </a>
+                        <a class="register-ways__link register-ways__tel-link" href="#">
+                            Войти в Telegram-бот
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="checking section">
+            <div class="container">
+                <div class="checking__inner">
+                    <h2 class="title checking__title">
+                        <span>Что можно проверить</span> прямо сейчас?
+                    </h2>
+                    <div class="checking__items">
+                        <div class="checking__item" data-aos="fade-down-left">
+                            <div class="checking__item-image-wrap">
+                                <img class="checking__item-img"
+                                    src="images/main-page/checking-block/block-bg-items/1.png" alt="image">
+                            </div>
+                            <div class="checking__item-content">
+                                <h3 class="checking__item-title">
+                                    Проверка номера мобильного телефона
+                                </h3>
+                                <ul class="checking__item-list">
+                                    <li class="checking__list-item">
+                                        Узнайте все о пользователе с неизвестным номером
+                                    </li>
+                                    <li class="checking__list-item">
+                                        Вся актуальная инфомрация: тариф, задолженности, судебные тяжбы
+                                    </li>
+                                    <li class="checking__list-item">
+                                        Местоположение, род деятельности и место работы владельца запрашиваемого номера
+                                    </li>
+                                </ul>
+                                <a class="checking__item-btn purple-btn" href="phone-number.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="checking__item checking__item--iconBg" data-aos="fade-down-left">
+                            <div class="checking__item-image-wrap">
+                                <img class="checking__item-img"
+                                    src="images/main-page/checking-block/block-bg-items/2.png" alt="image">
+                            </div>
+                            <div class="checking__item-content">
+                                <h3 class="checking__item-title">
+                                    Проверка адреса неизвестного E-mail
+                                </h3>
+                                <ul class="checking__item-list">
+                                    <li class="checking__list-item">
+                                        Подробная исчерпывающая информация про владельца аккаунта, с которого приходят
+                                        письма
+                                    </li>
+                                    <li class="checking__list-item">
+                                        Присутствие владельца аккаунта в социальных сетях, ссылки на профили
+                                    </li>
+                                    <li class="checking__list-item">
+                                        И даже - возможный пароль от аккаунта, с которого вам приходят письма
+                                    </li>
+                                </ul>
+                                <a class="checking__item-btn purple-btn" href="email.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="checking__item" data-aos="fade-down-left">
+                            <div class="checking__item-image-wrap">
+                                <img class="checking__item-img"
+                                    src="images/main-page/checking-block/block-bg-items/3.png" alt="image">
+                            </div>
+                            <div class="checking__item-content">
+                                <h3 class="checking__item-title">
+                                    Наведение справок о физических лицах
+                                </h3>
+                                <ul class="checking__item-list">
+                                    <li class="checking__list-item">
+                                        Вся актуальная информация о человеке: адрес, наличие авто, номер, родственники и
+                                        тд
+                                    </li>
+                                    <li class="checking__list-item">
+                                        Наличие социальных сетей, ссылки на аккаунты оных
+                                    </li>
+                                    <li class="checking__list-item">
+                                        Место работы и вид трудовой деятельности
+                                    </li>
+                                </ul>
+                                <a class="checking__item-btn purple-btn" href="individuals.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="checking__item" data-aos="fade-down-left">
+                            <div class="checking__item-image-wrap">
+                                <img class="checking__item-img"
+                                    src="images/main-page/checking-block/block-bg-items/4.png" alt="image">
+                            </div>
+                            <div class="checking__item-content">
+                                <h3 class="checking__item-title">
+                                    Наведение справок о юридических лицах
+                                </h3>
+                                <ul class="checking__item-list">
+                                    <li class="checking__list-item">
+                                        Информация о транспорте: VIN-номер, страховщик, юридическое лицо
+                                    </li>
+                                    <li class="checking__list-item">
+                                        Марка авто, номер кузова и город/область регистрации
+                                    </li>
+                                    <li class="checking__list-item">
+                                        ИНН, наименование должности, развернутая информация про организацию и еще много
+                                        чего
+                                    </li>
+                                </ul>
+                                <a class="checking__item-btn purple-btn" href="legal-entities.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits section">
+            <div class="container">
+                <div class="benefits__inner">
+                    <h2 class="title benefits__title">
+                        <span>Преимущества работы</span> с HimeraSearch
+                    </h2>
+                    <div class="benefits__items">
+                        <div class="benefits__item" data-aos="zoom-in-up">
+                            <img class="benefits__item-img" src="images/icons/phone.svg" alt="benefit image">
+                            <p class="benefits__item-text">
+                                Круглосуточная поддержка
+                            </p>
+                        </div>
+                        <div class="benefits__item" data-aos="zoom-in-up">
+                            <img class="benefits__item-img" src="images/icons/email.svg" alt="benefit image">
+                            <p class="benefits__item-text">
+                                Огромные базы данных
+                            </p>
+                        </div>
+                        <div class="benefits__item" data-aos="zoom-in-up">
+                            <img class="benefits__item-img" src="images/icons/docs.svg" alt="benefit image">
+                            <p class="benefits__item-text">
+                                Только актуальная информация
+                            </p>
+                        </div>
+                        <div class="benefits__item" data-aos="zoom-in-up">
+                            <img class="benefits__item-img" src="images/icons/person.svg" alt="benefit image">
+                            <p class="benefits__item-text">
+                                Возможность работы с юрлицами
+                            </p>
+                        </div>
+                        <div class="benefits__item" data-aos="zoom-in-up">
+                            <img class="benefits__item-img" src="images/icons/deals.svg" alt="benefit image">
+                            <p class="benefits__item-text">
+                                Быстрая и интуитивно понятная регистрация
+                            </p>
+                        </div>
+                        <div class="benefits__item" data-aos="zoom-in-up">
+                            <img class="benefits__item-img" src="images/icons/people.svg" alt="benefit image">
+                            <p class="benefits__item-text">
+                                Недорогая подписка
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-himeraSear section">
+            <div class="container">
+                <div class="about-himeraSear__inner">
+                    <h2 class="title about-himeraSear__title">
+                        <span>HimeraSear</span> интегрируется c APi
+                    </h2>
+                    <h6 class="subtitle about-himeraSear__subtitle">
+                        Что очень упрощает ее использование для юридических лиц или в случаях, где необходимо искать
+                        информаию много и часто
+                    </h6>
+                    <div class="about-himeraSear__wrapper">
+                        <div class="about-himeraSear__img-wrap" data-aos="fade-down-right">
+                            <img class="about-himeraSear__image" src="images/main-page/aboutHimera-block/main-img.png"
+                                alt="about-himeraSear image">
+                        </div>
+                        <div class="about-himeraSear__content" data-aos="fade-down-left">
+                            <ul class="about-himeraSear__list">
+                                <li class="about-himeraSear__list-item">
+                                    Круглосуточный режим обработки
+                                </li>
+                                <li class="about-himeraSear__list-item">
+                                    Обработка запросов в пакетном режиме
+                                </li>
+                                <li class="about-himeraSear__list-item">
+                                    Взаимодействие с любой АС
+                                </li>
+                                <li class="about-himeraSear__list-item">
+                                    JSON-структура ответа
+                                </li>
+                            </ul>
+                            <a class="about-himeraSear__btn white-border-btn" href="#">
+                                Смотреть презентацию
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rates section">
+            <div class="container">
+                <div class="rates__inner">
+                    <h2 class="title rates__title">
+                        <span>Тарифы</span>
+                    </h2>
+                    <div class="rates__items">
+
+                        <div class="rates__item" data-aos="fade-down">
+                            <img class="rates__item-tape" src="images/main-page/rate-block/rate-items-imgs/1.svg"
+                                alt="tape image">
+                            <p class="rates__item-price">1.199</p>
+                            <ul class="rates__item-list">
+                                <li class="rates__list-item">
+                                    <span>8 запросов</span> по ФИО
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>2 запроса</span> по ФИО
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>3 запроса</span> по телефону
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>2 запроса</span> по e-mail
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>5 запросов</span> по фото
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>10 запроса</span> по ИНН
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>10 запроса</span> по паспорту
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>10 запроса</span> по авто
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>10 запроса</span> по юрлицу
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="rates__item" data-aos="fade-down">
+                            <img class="rates__item-tape" src="images/main-page/rate-block/rate-items-imgs/2.svg"
+                                alt="tape image">
+                            <p class="rates__item-price">4.799</p>
+                            <ul class="rates__item-list">
+                                <li class="rates__list-item">
+                                    <span>50 запросов</span> по ФИО
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>20 запроса</span> по ФИО
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>20 запроса</span> по телефону
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>15 запроса</span> по e-mail
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>30 запросов</span> по фото
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>30 запросов</span> по фото
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>30 запросов</span> по фото
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>20 запроса</span> по авто
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>20 запроса</span> по авто
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="rates__item" data-aos="fade-down">
+                            <img class="rates__item-tape" src="images/main-page/rate-block/rate-items-imgs/3.svg"
+                                alt="tape image">
+                            <p class="rates__item-price">14.999</p>
+                            <ul class="rates__item-list">
+                                <li class="rates__list-item">
+                                    <span>3000 запросов</span> по ФИО
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>100 запроса</span> по ФИО
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>40 запроса</span> по телефону
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>40 запроса</span> по телефону
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>50 запросов</span> по фото
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>100 запроса</span> по ИНН
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>100 запроса</span> по паспорту
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>50 запроса</span> по авто
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>50 запроса</span> по юрлицу
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="rates__item rates__item--inf" data-aos="fade-down">
+                            <img class="rates__item-tape" src="images/main-page/rate-block/rate-items-imgs/4.svg"
+                                alt="tape image">
+                            <p class="rates__item-price">
+                                <span>от</span> 89
+                            </p>
+                            <ul class="rates__item-list">
+                                <li class="rates__list-item">
+                                    <span>Гибкий тариф</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>Нет оимита по времени</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>Большие скидки</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>От 6 рублей за запрос</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    <span>Моментальный подсчет</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="rates__item" data-aos="fade-down">
+                            <img class="rates__item-tape" src="images/main-page/rate-block/rate-items-imgs/5.svg"
+                                alt="tape image">
+                            <ul class="rates__item-list">
+                                <li class="rates__list-item">
+                                    Расширенный запрос по ФИО - <span>199р</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    Стандартный запрос по ФИО - <span>119р</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    Стандартный запрос по ФИО - <span>119р</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    Запрос по юридическому лицу ИНН/ОГРН - <span>99р</span>
+                                </li>
+                                <li class="rates__list-item">
+                                    Запрос по е-мейл - <span>89р</span>
+                                </li>
+                            </ul>
+                            <a class="rates__item-btn purple-btn" href="#">Смотреть полный список</a>
+                        </div>
+
+                        <div class="rates__item" data-aos="fade-down">
+                            <img class="rates__item-tape" src="images/main-page/rate-block/rate-items-imgs/6.svg"
+                                alt="tape image">
+                            <p class="rates__item-price">50</p>
+                            <ul class="rates__item-list">
+                                <li class="rates__list-item">
+                                    За любой разовый запрос
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions section">
+            <div class="container">
+                <div class="questions__inner">
+                    <h2 class="title questions__title">
+                        <span>Остались вопросы? </span><br>Возможно, мы на них уже ответили!
+                    </h2>
+
+                    <div class="accordion-block">
+
+                        <div class="accordion-item">
+                            <div class="accordion-item__content">
+                                <h3 class="accordion-item__title">Можно ли работать с юридическими лицами?</h3>
+                                <p class="accordion-item__text">
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                </p>
+                            </div>
+                            <button class="accordion-item__btn">
+                                <svg viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8482 0.29088C13.0716 0.477238 12.3761 1.10209 12.179 1.80367C12.0979 2.06676 12.0515 3.8865 12.0515 6.62705V11.0448H7.53102C4.62166 11.0448 2.80186 11.0887 2.40776 11.1654C1.65434 11.3189 0.912512 11.9657 0.692282 12.6563C0.379323 13.6319 0.900921 14.7501 1.87457 15.1995C2.37299 15.4188 2.52367 15.4297 7.21806 15.4297H12.0399L12.0747 20.0558C12.1095 24.5174 12.1211 24.7148 12.3529 25.1313C12.4804 25.3725 12.8165 25.7123 13.0831 25.8987C13.512 26.1837 13.6743 26.2275 14.3698 26.2275C15.0652 26.2275 15.2275 26.1837 15.6564 25.8987C15.923 25.7123 16.2591 25.3725 16.3866 25.1313C16.6184 24.7148 16.63 24.5174 16.6648 20.0558L16.6996 15.4297H21.5214C26.2158 15.4297 26.3665 15.4188 26.8649 15.1995C27.8386 14.7501 28.3602 13.6319 28.0472 12.6563C27.827 11.9657 27.0852 11.3189 26.3317 11.1654C25.9376 11.0887 24.1178 11.0448 21.2085 11.0448H16.688V6.62705C16.688 3.8865 16.6416 2.06676 16.5605 1.80367C16.433 1.33229 15.8766 0.696484 15.4245 0.477238C15.0189 0.279919 14.277 0.192221 13.8482 0.29088Z"
+                                        fill="#515595" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item__content">
+                                <h3 class="accordion-item__title">Как зарегистрироваться на сайте? </h3>
+                                <p class="accordion-item__text">
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                </p>
+                            </div>
+                            <button class="accordion-item__btn">
+                                <svg viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8482 0.29088C13.0716 0.477238 12.3761 1.10209 12.179 1.80367C12.0979 2.06676 12.0515 3.8865 12.0515 6.62705V11.0448H7.53102C4.62166 11.0448 2.80186 11.0887 2.40776 11.1654C1.65434 11.3189 0.912512 11.9657 0.692282 12.6563C0.379323 13.6319 0.900921 14.7501 1.87457 15.1995C2.37299 15.4188 2.52367 15.4297 7.21806 15.4297H12.0399L12.0747 20.0558C12.1095 24.5174 12.1211 24.7148 12.3529 25.1313C12.4804 25.3725 12.8165 25.7123 13.0831 25.8987C13.512 26.1837 13.6743 26.2275 14.3698 26.2275C15.0652 26.2275 15.2275 26.1837 15.6564 25.8987C15.923 25.7123 16.2591 25.3725 16.3866 25.1313C16.6184 24.7148 16.63 24.5174 16.6648 20.0558L16.6996 15.4297H21.5214C26.2158 15.4297 26.3665 15.4188 26.8649 15.1995C27.8386 14.7501 28.3602 13.6319 28.0472 12.6563C27.827 11.9657 27.0852 11.3189 26.3317 11.1654C25.9376 11.0887 24.1178 11.0448 21.2085 11.0448H16.688V6.62705C16.688 3.8865 16.6416 2.06676 16.5605 1.80367C16.433 1.33229 15.8766 0.696484 15.4245 0.477238C15.0189 0.279919 14.277 0.192221 13.8482 0.29088Z"
+                                        fill="#515595" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item__content">
+                                <h3 class="accordion-item__title">Законно ли искать людей по вашим базам данных?</h3>
+                                <p class="accordion-item__text">
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                </p>
+                            </div>
+                            <button class="accordion-item__btn">
+                                <svg viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8482 0.29088C13.0716 0.477238 12.3761 1.10209 12.179 1.80367C12.0979 2.06676 12.0515 3.8865 12.0515 6.62705V11.0448H7.53102C4.62166 11.0448 2.80186 11.0887 2.40776 11.1654C1.65434 11.3189 0.912512 11.9657 0.692282 12.6563C0.379323 13.6319 0.900921 14.7501 1.87457 15.1995C2.37299 15.4188 2.52367 15.4297 7.21806 15.4297H12.0399L12.0747 20.0558C12.1095 24.5174 12.1211 24.7148 12.3529 25.1313C12.4804 25.3725 12.8165 25.7123 13.0831 25.8987C13.512 26.1837 13.6743 26.2275 14.3698 26.2275C15.0652 26.2275 15.2275 26.1837 15.6564 25.8987C15.923 25.7123 16.2591 25.3725 16.3866 25.1313C16.6184 24.7148 16.63 24.5174 16.6648 20.0558L16.6996 15.4297H21.5214C26.2158 15.4297 26.3665 15.4188 26.8649 15.1995C27.8386 14.7501 28.3602 13.6319 28.0472 12.6563C27.827 11.9657 27.0852 11.3189 26.3317 11.1654C25.9376 11.0887 24.1178 11.0448 21.2085 11.0448H16.688V6.62705C16.688 3.8865 16.6416 2.06676 16.5605 1.80367C16.433 1.33229 15.8766 0.696484 15.4245 0.477238C15.0189 0.279919 14.277 0.192221 13.8482 0.29088Z"
+                                        fill="#515595" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item__content">
+                                <h3 class="accordion-item__title">Могу ли я искать информацию, не являясь гражданином
+                                    РФ?
+                                </h3>
+                                <p class="accordion-item__text">
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                </p>
+                            </div>
+                            <button class="accordion-item__btn">
+                                <svg viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8482 0.29088C13.0716 0.477238 12.3761 1.10209 12.179 1.80367C12.0979 2.06676 12.0515 3.8865 12.0515 6.62705V11.0448H7.53102C4.62166 11.0448 2.80186 11.0887 2.40776 11.1654C1.65434 11.3189 0.912512 11.9657 0.692282 12.6563C0.379323 13.6319 0.900921 14.7501 1.87457 15.1995C2.37299 15.4188 2.52367 15.4297 7.21806 15.4297H12.0399L12.0747 20.0558C12.1095 24.5174 12.1211 24.7148 12.3529 25.1313C12.4804 25.3725 12.8165 25.7123 13.0831 25.8987C13.512 26.1837 13.6743 26.2275 14.3698 26.2275C15.0652 26.2275 15.2275 26.1837 15.6564 25.8987C15.923 25.7123 16.2591 25.3725 16.3866 25.1313C16.6184 24.7148 16.63 24.5174 16.6648 20.0558L16.6996 15.4297H21.5214C26.2158 15.4297 26.3665 15.4188 26.8649 15.1995C27.8386 14.7501 28.3602 13.6319 28.0472 12.6563C27.827 11.9657 27.0852 11.3189 26.3317 11.1654C25.9376 11.0887 24.1178 11.0448 21.2085 11.0448H16.688V6.62705C16.688 3.8865 16.6416 2.06676 16.5605 1.80367C16.433 1.33229 15.8766 0.696484 15.4245 0.477238C15.0189 0.279919 14.277 0.192221 13.8482 0.29088Z"
+                                        fill="#515595" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item__content">
+                                <h3 class="accordion-item__title">Откуда у вас вся информация? </h3>
+                                <p class="accordion-item__text">
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                </p>
+                            </div>
+                            <button class="accordion-item__btn">
+                                <svg viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8482 0.29088C13.0716 0.477238 12.3761 1.10209 12.179 1.80367C12.0979 2.06676 12.0515 3.8865 12.0515 6.62705V11.0448H7.53102C4.62166 11.0448 2.80186 11.0887 2.40776 11.1654C1.65434 11.3189 0.912512 11.9657 0.692282 12.6563C0.379323 13.6319 0.900921 14.7501 1.87457 15.1995C2.37299 15.4188 2.52367 15.4297 7.21806 15.4297H12.0399L12.0747 20.0558C12.1095 24.5174 12.1211 24.7148 12.3529 25.1313C12.4804 25.3725 12.8165 25.7123 13.0831 25.8987C13.512 26.1837 13.6743 26.2275 14.3698 26.2275C15.0652 26.2275 15.2275 26.1837 15.6564 25.8987C15.923 25.7123 16.2591 25.3725 16.3866 25.1313C16.6184 24.7148 16.63 24.5174 16.6648 20.0558L16.6996 15.4297H21.5214C26.2158 15.4297 26.3665 15.4188 26.8649 15.1995C27.8386 14.7501 28.3602 13.6319 28.0472 12.6563C27.827 11.9657 27.0852 11.3189 26.3317 11.1654C25.9376 11.0887 24.1178 11.0448 21.2085 11.0448H16.688V6.62705C16.688 3.8865 16.6416 2.06676 16.5605 1.80367C16.433 1.33229 15.8766 0.696484 15.4245 0.477238C15.0189 0.279919 14.277 0.192221 13.8482 0.29088Z"
+                                        fill="#515595" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item__content">
+                                <h3 class="accordion-item__title">Сколько пользователей на вашем сервисе? </h3>
+                                <p class="accordion-item__text">
+                                    Ежедневное число число посещений Himera Search равно 1345. Каждый час сервис
+                                    обрабатывает около 230 заявок
+                                </p>
+                            </div>
+                            <button class="accordion-item__btn">
+                                <svg viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8482 0.29088C13.0716 0.477238 12.3761 1.10209 12.179 1.80367C12.0979 2.06676 12.0515 3.8865 12.0515 6.62705V11.0448H7.53102C4.62166 11.0448 2.80186 11.0887 2.40776 11.1654C1.65434 11.3189 0.912512 11.9657 0.692282 12.6563C0.379323 13.6319 0.900921 14.7501 1.87457 15.1995C2.37299 15.4188 2.52367 15.4297 7.21806 15.4297H12.0399L12.0747 20.0558C12.1095 24.5174 12.1211 24.7148 12.3529 25.1313C12.4804 25.3725 12.8165 25.7123 13.0831 25.8987C13.512 26.1837 13.6743 26.2275 14.3698 26.2275C15.0652 26.2275 15.2275 26.1837 15.6564 25.8987C15.923 25.7123 16.2591 25.3725 16.3866 25.1313C16.6184 24.7148 16.63 24.5174 16.6648 20.0558L16.6996 15.4297H21.5214C26.2158 15.4297 26.3665 15.4188 26.8649 15.1995C27.8386 14.7501 28.3602 13.6319 28.0472 12.6563C27.827 11.9657 27.0852 11.3189 26.3317 11.1654C25.9376 11.0887 24.1178 11.0448 21.2085 11.0448H16.688V6.62705C16.688 3.8865 16.6416 2.06676 16.5605 1.80367C16.433 1.33229 15.8766 0.696484 15.4245 0.477238C15.0189 0.279919 14.277 0.192221 13.8482 0.29088Z"
+                                        fill="#515595" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback section">
+            <div class="container">
+                <div class="feedback__inner">
+                    <h2 class="title feedback__title">
+                        <span>Они воспользовались нашим сервиcом.</span> <br>И вот как отозвались о нем!
+                    </h2>
+                    <div class="feedback__items">
+                        <div class="feedback__item" data-aos="fade-down-right">
+                            <div class="feedback__item-content">
+                                <h3 class="feedback__item-title">Проверка кандидатов на работу</h3>
+                                <p class="feedback__item-text">
+                                    Для принятия решения по вакансии вы можете без труда проверить: его кредитную
+                                    историю,
+                                    наличие негативного прошлого и действующего, сверить актуальность данных,
+                                    сопоставить
+                                    предоставление сведений в резюме и принять взвешенное решение не прибегая к
+                                    энергозатратным
+                                    действиям
+                                </p>
+                            </div>
+                            <img class="feedback__item-num" src="images/main-page/feedback-block/1.png"
+                                alt="number icon">
+                        </div>
+                        <div class="feedback__item" data-aos="fade-down-left">
+                            <div class="feedback__item-content">
+                                <h3 class="feedback__item-title">Проверка подрядчика</h3>
+                                <p class="feedback__item-text">
+                                    Субподрядчика, заказчика, поставщика С целью обеспечения безопасного и надёжного
+                                    сопадничества вы можете проверить своих контрагентов на предмет негатива и
+                                    предотвратить
+                                    возможные убытки уже на ранней стадии
+                                </p>
+                            </div>
+                            <img class="feedback__item-num" src="images/main-page/feedback-block/2.png"
+                                alt="number icon">
+                        </div>
+                        <div class="feedback__item" data-aos="fade-up-right">
+                            <div class="feedback__item-content">
+                                <h3 class="feedback__item-title">При заключении сделок</h3>
+                                <p class="feedback__item-text">
+                                    И приобретении товаров по схеме "из рук в руки". Вы можете проверить телефонный
+                                    номер,
+                                    изучить отзывы, сопоставить данные, проанализировать сведения предоставляемые
+                                    продавцом
+                                    /
+                                    покупателем и избежать потери денежных средств, обращений в полицию и суды
+                                </p>
+                            </div>
+                            <img class="feedback__item-num" src="images/main-page/feedback-block/3.png"
+                                alt="number icon">
+                        </div>
+                        <div class="feedback__item" data-aos="fade-up-left">
+                            <div class="feedback__item-content">
+                                <h3 class="feedback__item-title">Бытовые ситуации</h3>
+                                <p class="feedback__item-text">
+                                    Вам перегородили машину? Затопили квартиру? Не возвращают крупную сумму денег?
+                                    Сервис
+                                    поможет справиться с любой ситуацией и даст возможность быть готовым к любым
+                                    нестандартным
+                                    историям
+                                </p>
+                            </div>
+                            <img class="feedback__item-num" src="images/main-page/feedback-block/4.png"
+                                alt="number icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-block" class="form-block section">
+            <div class="container">
+                <div class="form-block__inner">
+                    <h2 class="title form-block__title">
+                        <span>Кто владеет информацией,</span> тот владеет всем!
+                    </h2>
+                    <h6 class="subtitle form-block__subtitle">
+                        Наведите справки о ком угодно: сосед, коллега, контрагент или партнер - и спите спокойно
+                    </h6>
+                    <div class="form-block__container">
+                        <div class="form-block__img-wrap" data-aos="zoom-in-left">
+                            <img src="images/common/form-block-img.png" alt="form image">
+                        </div>
+                        <div class="form-block__wrapper" data-aos="zoom-in-right">
+                            <form class="reg-form" action="#">
+                                <h3 class="reg-form__title">Регистрируйтесь</h3>
+                                <div class="reg-form__input-box">
+                                    <input class="reg-form__input" type="email" placeholder="E-Mail" required>
+                                </div>
+                                <div class="reg-form__input-box">
+                                    <input class="reg-form__input" type="password" placeholder="Пароль" required>
+                                </div>
+                                <div class="reg-form__input-box">
+                                    <input class="reg-form__input" type="password" placeholder="Повторите пароль"
+                                        required>
+                                </div>
+                                <button class="reg-form__btn purple-btn">Зарегистрироваться</button>
+                            </form>
+                            <a class="form-block__tel-btn" href="#">
+                                <svg width="33" height="28" viewBox="0 0 33 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.7796 0.153301C28.5851 0.975203 1.50826 11.5679 1.10808 11.7651C-0.215103 12.4029 -0.370012 13.2445 0.733716 13.8166C0.843443 13.8758 2.67008 14.4675 4.80654 15.1448L8.68572 16.3743L17.4897 10.7591C22.3371 7.67534 26.397 5.11101 26.5132 5.07156C26.8165 4.96635 27.0747 4.97293 27.1909 5.09786C27.2748 5.18334 27.2813 5.22279 27.2103 5.34772C27.1715 5.43319 23.9507 8.41176 20.0651 11.9624C16.1794 15.5196 12.9844 18.4521 12.9715 18.485C12.9586 18.5179 12.8295 20.2932 12.6811 22.4301L12.41 26.3095L12.7069 26.27C12.8683 26.2503 13.12 26.1648 13.2684 26.0794C13.4234 26.0004 14.4303 25.0668 15.5211 24.0082C16.6054 22.9496 17.5349 22.0619 17.5801 22.0487C17.6253 22.029 19.3551 23.2783 21.427 24.8235C23.4925 26.3687 25.3449 27.7034 25.545 27.7955C26.0678 28.0453 26.6487 28.0651 27.0295 27.8612C27.3716 27.6771 27.7008 27.2169 27.8428 26.7369C27.8945 26.5528 29.0821 20.9836 30.4698 14.3623C32.787 3.34228 33 2.27709 33 1.70505C33 1.16588 32.9806 1.03438 32.8386 0.751646C32.7418 0.547815 32.5675 0.343987 32.3997 0.225632C32.0189 -0.043951 31.3864 -0.0768318 30.7796 0.153301Z"
+                                        fill="white" />
+                                </svg>
+                                <span>Войти через Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="reg-modal-block">
+            <div class="reg-modal-overlay">
+                <div class="reg-modal">
+                    <h3 class="reg-modal__title">
+                        Всего пара кликов и готово!
+                    </h3>
+                    <form class="reg-modal__form" action="#">
+                        <div class="reg-modal__input-box">
+                            <input class="reg-modal__input" type="email" placeholder="E-Mail" required>
+                        </div>
+                        <div class="reg-modal__input-box">
+                            <input class="reg-modal__input" type="password" placeholder="Пароль" required>
+                        </div>
+                        <button class="reg-modal__btn purple-btn">Зарегистрироваться</button>
+                    </form>
+                    <div class="reg-modal__el">Или</div>
+                    <a class="reg-modal__tel-btn" href="#">
+                        <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M30.7796 0.153301C28.5851 0.975203 1.50826 11.5679 1.10808 11.7651C-0.215103 12.4029 -0.370012 13.2445 0.733716 13.8166C0.843443 13.8758 2.67008 14.4675 4.80654 15.1448L8.68572 16.3743L17.4897 10.7591C22.3371 7.67534 26.397 5.11101 26.5132 5.07156C26.8165 4.96635 27.0747 4.97293 27.1909 5.09786C27.2748 5.18334 27.2813 5.22279 27.2103 5.34772C27.1715 5.43319 23.9507 8.41176 20.0651 11.9624C16.1794 15.5196 12.9844 18.4521 12.9715 18.485C12.9586 18.5179 12.8295 20.2932 12.6811 22.4301L12.41 26.3095L12.7069 26.27C12.8683 26.2503 13.12 26.1648 13.2684 26.0794C13.4234 26.0004 14.4303 25.0668 15.5211 24.0082C16.6054 22.9496 17.5349 22.0619 17.5801 22.0487C17.6253 22.029 19.3551 23.2783 21.427 24.8235C23.4925 26.3687 25.3449 27.7034 25.545 27.7955C26.0678 28.0453 26.6487 28.0651 27.0295 27.8612C27.3716 27.6771 27.7008 27.2169 27.8428 26.7369C27.8945 26.5528 29.0821 20.9836 30.4698 14.3623C32.787 3.34228 33 2.27709 33 1.70505C33 1.16588 32.9806 1.03438 32.8386 0.751646C32.7418 0.547815 32.5675 0.343987 32.3997 0.225632C32.0189 -0.043951 31.3864 -0.0768318 30.7796 0.153301Z"
+                                fill="white" />
+                        </svg>
+                        <span>Войти через Telegram</span>
+                    </a>
+                    <a class="reg-modal__recovery-pass-btn" href="#">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--fk">
+                        <img class="footer__fk-image" src="images/common/f-ks-img.png" alt="free-kassa image">
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__list--hide">
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--email">
+                        <a class="footer__list-link" href="#">
+                            Admin@himera-serch.info
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__list-item--tel">
+                        <a class="footer__list-link" href="#">
+                            Ищите нас в Telegram
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

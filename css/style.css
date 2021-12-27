@@ -1,0 +1,41 @@
+@import './assets/fonts.css';
+@import './assets/reset.css';
+@import './assets/global.css'; 
+
+@import './components/common/header.css';
+@import './components/common/offer.css';
+@import './components/common/himera-helps.css';
+@import './components/common/report.css';
+@import './components/common/about-himerSear.css';
+@import './components/common/form-block.css';
+@import './components/common/interaction.css';
+@import './components/common/getting-info.css';
+@import './components/common/footer.css';
+
+@import './components/main-page/abilities.css';
+@import './components/main-page/info.css';
+@import './components/main-page/work-steps.css';
+@import './components/main-page/register-ways.css';
+@import './components/main-page/checking.css';
+@import './components/main-page/benefits.css';
+@import './components/main-page/rates.css';
+@import './components/main-page/questions.css';
+@import './components/main-page/feedback.css';
+
+@import './components/individuals-page/info-src.css';
+
+@import './components/articles-page/about-articles.css';
+@import './components/articles-page/articles-block.css';
+
+@import './components/article-page/article.css';
+
+
+@import './components/about-us-page/about-us-offer-block.css';
+@import './components/about-us-page/about-us-statistics-block.css';
+@import './components/about-us-page/about-us-activity-block.css';
+
+@import './components/nav-block.css';
+@import './components/register-modal.css'; 
+
+
+

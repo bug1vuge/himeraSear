@@ -1,0 +1,116 @@
+/* interaction-block */
+.interaction__title{
+    max-width: 1080px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.interaction__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.interaction__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 320px;
+    margin-right: 30px;
+}
+.interaction__item:last-child{
+    margin-right: 0;
+}
+.interaction__item-num{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 150px;
+    color: #515595;
+
+}
+.interaction__item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+    color: #515595;
+
+    margin-bottom: 10px;
+}
+.interaction__item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media(max-width: 1020px){
+    .interaction__items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .interaction__item{
+        margin-right: 40px;
+    }
+    .interaction__item:nth-child(2){
+        margin-right: 0;
+    }
+    .interaction__item:nth-child(3){
+        margin-top: 40px;
+    }
+    .interaction__item-num{
+        font-size: 110px;
+    }
+    .interaction__item-text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media(max-width: 768px){
+    .interaction__title{
+        max-width: 330px;
+    }
+    .interaction__items{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .interaction__item{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .interaction__item:last-child{
+        margin-bottom: 0;
+    }
+    .interaction__item:nth-child(3){
+        margin-top: 0;
+    }
+    .interaction__item-num{
+        font-size: 100px;
+    }
+    .interaction__item-title{
+        margin-bottom: 8px;
+    }
+    .interaction__item-text{
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+@media(max-width: 425px){
+    .interaction__title{
+        max-width: 280px;
+    }
+    .interaction__item-num{
+        font-size: 80px;
+    }
+    .interaction__item-title{
+        font-size: 19px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+}

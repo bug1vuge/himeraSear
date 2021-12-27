@@ -1,0 +1,23 @@
+/* report-block */
+.report{
+    margin-bottom: 110px;
+}
+.report__title{
+    max-width: 1048px;
+    margin: 0 auto;
+    text-align: center;
+}
+.report__image{
+    width: 100%;
+}
+.report__image img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media(max-width: 1024px) {
+    .report{
+        margin-bottom: 70px;
+    }
+}

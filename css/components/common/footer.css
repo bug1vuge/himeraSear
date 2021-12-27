@@ -1,0 +1,87 @@
+.footer{
+    padding: 40px 0 50px;
+    border-top: 2px solid #FFFFFF; 
+}
+.footer__inner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__list-item{
+    margin-bottom: 20px;
+}
+.footer__list-item--fk {
+    margin-bottom: 14px;
+}
+.footer__list-item--logo {
+    margin-bottom: 11px;
+}
+.footer__list-item--email,
+.footer__list-item--tel {
+    position: relative;
+    padding-left: 45px;
+}
+.footer__list-item--email::before,
+.footer__list-item--tel::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 33px; 
+}
+.footer__list-item--email::before{
+    content: url('../../../images/icons/letter-purple.svg');
+    height: 21px;
+}
+.footer__list-item--tel::before{
+    content: url('../../../images/icons/tele-purple.svg');
+    height: 28px;
+}
+.footer__list-item:last-child{
+    margin-bottom: 0;
+}
+.footer__list-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+    transition: all 0.4s ease-in;
+}
+.footer__list-link:hover{
+    color: #515595;
+    transition: all 0.4s ease-in;
+}
+
+
+@media(max-width: 880px) {
+    .footer__inner{
+        flex-direction: column;
+    }
+    .footer__list{
+        margin-bottom: 40px;
+    }
+    .footer__list:last-child{
+        margin-bottom: 0;
+    }
+    .footer__list-item{
+        margin-bottom: 15px;
+    }
+    .footer__list-link{
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+@media(max-width: 425px) {
+    .footer__list{
+        margin-bottom: 30px;
+    }
+    .footer__list--hide{
+        display: none;
+    }
+}
+
+

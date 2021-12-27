@@ -1,0 +1,224 @@
+.about-us-statistics__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 175px;
+}
+.about-us-statistics__item{
+    max-width: 480px;
+    width: 100%;
+
+    margin-right: 30px;
+}
+.about-us-statistics__item:last-child{
+    margin-right: 0;
+}
+.about-us-statistics__item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 73px;
+    /* identical to box height, or 112% */
+
+
+    color: #515595;
+    margin-bottom: 15px;
+}
+.about-us-statistics__item-desc{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    /* or 147% */
+
+
+    color: #FFFFFF;
+
+    min-height: 200px;
+
+    margin-bottom: 45px;
+
+}
+.about-us-statistics__graph-item{
+    margin-bottom: 30px;
+}
+.about-us-statistics__graph-item:last-child{
+    margin-bottom: 0;
+}
+.about-us-statistics__graph-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+.about-us-statistics__graph-item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.about-us-statistics__graph-item-num{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: #515595;
+}
+.about-us-statistics__graph-line{
+    width: 100%;
+    height: 5px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 101px;
+    
+    position: relative;
+}
+.about-us-statistics__graph-line::before{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 5px;
+    width: 100%;
+
+    background: #515595;
+    border-radius: 101px;
+}
+.about-us-statistics__graph-line--25::before{ max-width: 95px; }
+.about-us-statistics__graph-line--60::before{ max-width: 273px; }
+.about-us-statistics__graph-line--75::before{ max-width: 378px; }
+.about-us-statistics__graph-line--64::before{ max-width: 318px; }
+.about-us-statistics__graph-line--100::before{ max-width: 100%; }
+.about-us-statistics__video-container{
+    height: 650px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+.about-us-statistics__play-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 1200px){
+    .about-us-statistics__video-container{
+        height: 530px;
+    }
+    .about-us-statistics__play-btn{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 1070px){
+    .about-us-statistics__items{
+        display: block;
+        margin-bottom: 100px;
+    }
+    .about-us-statistics__item{
+        max-width: 530px;
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+    .about-us-statistics__item:last-child{
+        margin-bottom: 0;
+    }
+    .about-us-statistics__item-title{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .about-us-statistics__item-desc{
+        min-height: auto;
+    }
+    .about-us-statistics__video-container{
+        height: 440px;
+    }
+    .about-us-statistics__play-btn{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media(max-width: 768px){
+    .about-us-statistics__items{
+        margin-bottom: 70px;
+    }
+    .about-us-statistics__item-title{
+        font-size: 43px;
+        line-height: 47px;
+        margin-bottom: 10px;
+    }
+    .about-us-statistics__item-desc{
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .about-us-statistics__video-container{
+        height: 360px;
+    }
+    .about-us-statistics__play-btn{
+        width: 110px;
+        height: 110px;
+    }
+}
+@media(max-width: 570px){
+    .about-us-statistics__item{
+        max-width: 430px;
+        margin-bottom: 50px;
+    }
+    .about-us-statistics__item-title{
+        font-size: 37px;
+        line-height: 42px;
+    }
+    .about-us-statistics__item-desc{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .about-us-statistics__video-container{
+        height: 270px;
+    }
+    .about-us-statistics__play-btn{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width: 425px){
+    .about-us-statistics__item{
+        max-width: 100%;
+    }
+    .about-us-statistics__item-title{
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .about-us-statistics__item-desc{
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-bottom: 40px;
+    }
+    .about-us-statistics__graph-item{
+        margin-bottom: 25px;
+    }
+    .about-us-statistics__video-container{
+        height: 170px;
+    }
+    .about-us-statistics__play-btn{
+        width: 70px;
+        height: 70px;
+    }
+}

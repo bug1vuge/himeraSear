@@ -1,0 +1,91 @@
+/* getting-info-block */
+.getting-info__title{
+    max-width: 944px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.getting-info__item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+.getting-info__item:last-child{
+    margin-bottom: 0;
+}
+.getting-info__item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 35px;
+    color: #515595;
+
+    max-width: 425px;
+    margin-right: 40px;
+}
+.getting-info__item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+
+    max-width: 660px;
+}
+
+@media(max-width: 1024px){
+    .getting-info__title{
+        max-width: 610px;
+    }
+    .getting-info__item-title{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .getting-info__item-text{
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 600px;
+    }
+}
+@media(max-width: 880px){
+    .getting-info__items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .getting-info__item{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 480px;
+    }
+    .getting-info__item-title{
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+        max-width: 330px;
+    }
+    .getting-info__item-text{
+        text-align: center;
+        max-width: 100%;
+    }
+}
+@media(max-width: 500px){
+    .getting-info__item{
+        max-width: 330px;
+    }
+    .getting-info__item-title{
+        max-width: 300px;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .getting-info__item-text{
+        font-size: 15px;
+        line-height: 26px;
+    }
+}

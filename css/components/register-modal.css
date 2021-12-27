@@ -1,0 +1,238 @@
+.reg-modal-block{
+    visibility: hidden;
+}
+.reg-modal-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.reg-modal{
+    max-width: 530px;
+    width: 100%;
+
+    padding: 30px 40px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 65px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.reg-modal__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #515595;
+
+    margin-bottom: 36px;
+}
+.reg-modal__input-box{
+    margin-bottom: 26px;
+
+    position: relative;
+}
+.reg-modal__input-box::after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 37px;
+}
+.reg-modal__input-box:nth-child(1)::after{
+    content: url('../../images/icons/letter-purple.svg');
+}
+.reg-modal__input-box:nth-child(2)::after{
+    content: url('../../images/icons/modal-pass-icon.svg');
+}
+.reg-modal__input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(73, 77, 134, 0.3);
+
+    width: 100%;
+
+    padding: 20px 80px 20px 20px;
+    border: 2px solid #515595;
+    border-radius: 20px;
+
+    outline: none;
+}
+.reg-modal__input::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(73, 77, 134, 0.3);
+}
+.reg-modal__btn{
+    display: block;
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    height: 65px;
+    padding: 12px 50px;
+}
+.reg-modal__el{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #515595;
+    text-align: center;
+
+    margin: 15px 0;
+}
+.reg-modal__tel-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    border: none;
+    background: #54A7E6;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 12px 50px;
+
+    height: 65px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    margin-bottom: 35px;
+}
+.reg-modal__tel-btn span{
+    margin-left: 30px;
+}
+.reg-modal__tel-btn svg path{
+    transition: all 0.3s ease-in;
+}
+.reg-modal__tel-btn:hover{
+    background: #fff;
+    color: #494D86;
+    transition: all 0.3s ease-in;
+}
+.reg-modal__tel-btn:hover svg path{
+    fill: #494D86;
+    transition: all 0.3s ease-in;
+}
+.reg-modal__recovery-pass-btn{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #515595;
+}
+
+.reg-modal-block.visible{
+    visibility: visible;
+}
+.reg-modal-block.reg-modal-block.visible .reg-modal-overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in;
+}
+
+@media(max-width: 1024px){
+    .reg-modal__title{
+        font-size: 35px;
+        line-height: 40px;
+        max-width: 360px;
+        margin: 0 auto 25px;
+    }
+    .reg-modal__input-box::after{
+        right: 25px;
+    }
+    .reg-modal__input{
+        padding: 15px 60px 15px 20px;
+        border-width: 1px;
+    }
+    .reg-modal__input,
+    .reg-modal__input::placeholder{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .reg-modal__btn,
+    .reg-modal__tel-btn{
+        height: 57px;
+    }
+}
+@media(max-width: 768px){
+    .reg-modal{
+        max-width: 430px;
+    }
+    .reg-modal__title{
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 310px;
+    }
+    .reg-modal__input{
+        padding: 15px 60px 15px 15px;
+    }
+    .reg-modal__input,
+    .reg-modal__input::placeholder{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .reg-modal__el{
+        margin: 12px 0;
+    }
+    .reg-modal__btn{
+        font-size: 15px;
+    }
+    .reg-modal__tel-btn{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .reg-modal__tel-btn svg{
+        display: none;
+    }
+    .reg-modal__tel-btn span{
+        margin-left: 0;
+    }
+}
+@media(max-width: 425px){
+    .reg-modal{
+        padding: 30px;
+    }
+    .reg-modal__title{
+        font-size: 25px;
+        line-height: 30px;
+        max-width: 250px;
+    }
+    .reg-modal__input-box:nth-child(1)::after,
+    .reg-modal__input-box:nth-child(2)::after{
+        content: '';
+    }
+
+}

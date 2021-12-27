@@ -1,0 +1,131 @@
+.article{
+    margin-bottom: 85px;
+}
+.article__title{
+    max-width: 755px;
+    margin: 0 auto 85px;
+    text-align: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 65px;
+    text-align: center;
+    color: #515595;
+}
+.article__title span{
+    color: #FFFFFF;
+}
+.article__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 296px;
+    height: 65px;
+    margin: 0 auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    padding: 15px 20px;
+}
+.article__content{
+    margin: 85px auto;
+}
+.article__content-block{
+    margin-bottom: 45px;
+}
+.article__content-block:last-child{
+    margin-bottom: 0;
+}
+.article__content-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.article__content-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.article__content-text:last-child{
+    margin-bottom: 0;
+}
+
+@media(max-width: 1024px){
+    .article__title{
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 65px;
+    }
+    .article__content{
+        margin: 65px auto;
+    }
+    .article__btn{
+        font-size: 16px;
+    }
+    .article__content-text{
+        font-size: 17px;
+    }
+}
+@media(max-width: 768px){
+    .article{
+        margin-bottom: 65px;
+    }
+    .article__title{
+        font-size: 40px;
+        line-height: 45px;
+        max-width: 450px;
+        margin-bottom: 45px;
+    }
+    .article__btn{
+        max-width: 260px;
+        height: 55px;
+    }
+    .article__content{
+        margin: 50px auto;
+    }
+    .article__content-block{
+        margin-bottom: 35px;
+    }
+    .article__content-title{
+        margin-bottom: 15px;
+    }
+    .article__content-text{
+        font-size: 16px;
+    }
+}
+@media(max-width: 480px){
+    .article__title{
+        max-width: 100%;
+        text-align: left;
+
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    .article__content{
+        margin: 45px auto;
+    }
+    .article__content-title{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .article__content-text{
+        font-size: 15px;
+    }
+}

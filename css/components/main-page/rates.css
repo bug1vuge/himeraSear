@@ -1,0 +1,172 @@
+/* rates-bloc */
+.rates__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.rates__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+    position: relative;
+}
+.rates__items::after{
+    content: url('../../../images/main-page/rate-block/items-decor-img.png');
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+}
+.rates__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 0 30px 40px;
+}
+.rates__item:last-child{
+    height: 270px;
+}
+.rates__item-tape{
+    margin-bottom: 17px;
+    margin-top: -1px;
+}
+.rates__item-price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 65px;
+    color: #515595;
+
+    margin-bottom: 17px;
+
+    position: relative;
+    padding-right: 16px;
+}
+.rates__item-price::after{
+    content: url('../../../images/icons/rub-icon.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.rates__item-price span{
+    font-size: 18px;
+    line-height: 35px;
+
+    margin-right: -5px;
+}
+
+.rates__list-item{
+    position: relative;
+    padding-left: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #515595;
+    margin-bottom: 15px;
+}
+.rates__list-item:last-child{
+    margin-bottom: 0;
+}
+.rates__list-item span{
+    font-weight: 700;
+}
+.rates__list-item::before{
+    content: url('../../../images/icons/tick.svg');
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+.rates__item-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    height: 65px;
+    padding: 12px 40px;
+    margin-top: 45px;
+}
+
+@media(max-width: 1440px) {
+    .rates__items::after{
+        content: url('../../../images/main-page/rate-block/items-adapt-decor-img.png');
+        bottom: -30px;
+    }
+}
+@media(max-width: 1024px){
+    .rates__items{
+        max-width: 760px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 360px);
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    .rates__items::after{
+        bottom: -30px;
+        right: 0;
+    }
+    .rates__item--inf{
+        display: none;
+    }
+}
+@media(max-width: 790px){
+    .rates__items{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .rates__items::after{
+        content: '';
+    }
+    .rates__item{
+        max-width: 360px;
+        width: 100%;
+        padding: 0 30px 30px;
+    }
+    .rates__item-tape{
+        margin-bottom: 25px;
+        max-width: 50%;
+    }
+    .rates__item-price{
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+    .rates__item-btn{
+        font-size: 15px;
+        height: 55px;
+        padding: 12px 34px;
+    }
+}
+@media(max-width: 425px) {
+    .rates__item-price{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .rates__list-item{
+        font-size: 17px;
+        line-height: 25px;
+
+        margin-bottom: 10px;
+    }
+    .rates__item-btn{
+        padding: 12px 24px;
+    }
+}

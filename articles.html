@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMERA SEARCH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dist/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#logo">
+                    <img class="logo__image" src="images/common/logo.svg" alt="logo image">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Услуги</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a id="open-register-modal" class="menu__list-link" href="#">Авторизация</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Блог</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="mobile-menu-btn" href="#">
+                    <span></span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="adapt-menu-block">
+        <div class="adapt-menu__container">
+            <div class="adapt-menu">
+                <a class="adapt-menu__close-btn" href="#">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.7067 1.39544C19.0258 0.978076 18.0922 0.928141 17.4568 1.2849C17.2134 1.41356 15.8938 2.66752 13.956 4.60539L10.8321 7.72923L7.63564 4.53274C5.57841 2.47551 4.26062 1.21972 3.92769 0.995315C3.28642 0.571088 2.30453 0.503871 1.66046 0.836487C0.749285 1.30507 0.327462 2.46455 0.698127 3.47083C0.89553 3.9783 0.994329 4.0926 4.31376 7.41203L7.72335 10.8216L4.47682 14.1173C1.34656 17.2968 1.21523 17.4445 1.0846 17.903C1.00422 18.1636 1.00162 18.6416 1.05835 18.9619C1.16007 19.4667 1.24381 19.6125 1.73558 20.1042C2.22735 20.596 2.3731 20.6797 2.87789 20.7815C3.19818 20.8382 3.67616 20.8356 3.93685 20.7552C4.39533 20.6246 4.54305 20.4932 7.72249 17.363L11.0182 14.1165L14.4278 17.5261C17.7472 20.8455 17.8615 20.9443 18.369 21.1417C19.3753 21.5123 20.5347 21.0905 21.0033 20.1793C21.3359 19.5353 21.2687 18.5534 20.8445 17.9121C20.6201 17.5792 19.3643 16.2614 17.3071 14.2042L14.1106 11.0077L17.2344 7.88384C19.1723 5.94597 20.4262 4.62644 20.5549 4.38304C20.7981 3.95957 20.8542 3.11657 20.6896 2.64189C20.5423 2.2155 20.0797 1.62893 19.7067 1.39544Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+                <nav>
+                    <ul class="adapt-menu__list">
+                        <li class="adapt-menu__list-item">
+                            <a class="adapt-menu__list-link" href="#">Услуги</a>
+                        </li>
+                        <li class="adapt-menu__list-item">
+                            <a class="adapt-menu__list-link" href="#">Этапы</a>
+                        </li>
+                        <li class="adapt-menu__list-item">
+                            <a id="open-register-modal" class="adapt-menu__list-link" href="#">Авторизоваться</a>
+                        </li>
+                        <li class="adapt-menu__list-item">
+                            <a class="adapt-menu__list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="adapt-menu__login-btn" href="#">Войти</a>
+
+                <ul class="adapt-menu__contacts-list">
+                    <li class="adapt-menu__contacts-item adapt-menu__contacts-item--email">
+                        <a class="adapt-menu__contacts-link" href="#">Admin@himera-serch.info</a>
+                    </li>
+                    <li class="adapt-menu__contacts-item adapt-menu__contacts-item--tel">
+                        <a class="adapt-menu__contacts-link" href="#">Ищите нас в Telerram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <section class="about-articles section">
+            <div class="container">
+                <div class="about-articles__inner">
+                    <div class="about-articles__content">
+                        <h1 class="about-articles__title">
+                            Статьи на <span>HimeraSearch</span>
+                        </h1>
+                        <p class="about-articles__text">
+                            Нужна проверенная и актуальная информация? Ищите ее в базе!
+                        </p>
+                    </div>
+                    <div class="about-articles__image-wrap">
+                        <img class="about-articles__img" src="images/articles-page/top-img.png" alt="articles image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles-block section">
+            <div class="container">
+                <div class="articles-block__inner">
+                    <h2 class="title articles-block__title">
+                        Информация о поиске нужной информации <span>посредством OSINT на нашем ресурсе</span>
+                    </h2>
+                    <div class="articles-block__items">
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Проверка по ИНН физического лица
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Индивидуальный идентификационный номер налогоплательщика (ИНН) в России – уникальный
+                                цифровой код, присваиваемый Федеральнои
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как проверить авто по VIN
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Пробить транспортное средство может понадобиться по разным причинам. Например, проверка
+                                автомобиля жизненно важна в том случае, если вы планируете
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Проверка штрафов ГИБДД по...
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Любой водитель знает, чем чреваты несвоевременно уплаченные штрафы выписанные
+                                автоинспекторами а дороге даже за самые незначительные нарушении
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как и где проверить задолженность по...
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Случаются ситуации, в которых физлицу требуется проверить долги по налогам. Далеко не
+                                каждый человек знает, в каком состоянии находятся его налоговые отчисления...
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__image-item">
+                            <img src="images/articles-page/items-img.png" alt="decor image">
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как проверить долги по кредитам, свои
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Согласно финансовой статистике, степень закредитованности населения в России уже на
+                                протяжении нескольких лет бьет все рекорды. Одна из главных проблеи
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как пробить авто по госномеру
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Проверка авто по гос номеру – популярная услуга, которую сегодня предлагают многие
+                                интернет-сервисы, специализирующиеся на пробивке информации для автовладельцев.
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как узнать, находится ли человек в розыске
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Если человек пропал, его объявляют в розыск правоохранительные органы. Это стандартная
+                                во всем мире практика, которой предусмотрены четко регламентированные...
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Проверка человека по номеру паспорта
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Зная паспортные данные человека, можно получить о нем достаточно много важной
+                                информации. Что можно узнать по паспорту? Серия и номер документа помогут за
+                                несколько...
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как узнать ИНН человека по паспор...
+                            </h3>
+                            <p class="articles-block__item-text">
+                                ИНН – идентификационный налоговый номер, который присваивается государством каждому
+                                гражданину-физлицу. Узнать ИНН физического лица может потребоваться в самых...
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                        <div class="articles-block__item">
+                            <h3 class="articles-block__item-title">
+                                Как и где проверить штрафы ГИБДД
+                            </h3>
+                            <p class="articles-block__item-text">
+                                Каждый водитель рано или поздно сталкивается с тем, что сотрудники Госавтоинспекции по
+                                каким-либо причинам выписывают штрафы. Несвоевременная уплата штрафа...
+                            </p>
+                            <a class="articles-block__item-btn purple-btn">
+                                Читать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-block">
+                        <ul class="nav-block__list">
+                            <li class="nav-block__list-item active">
+                                <a class="nav-block__list-link" href="#">1</a>
+                            </li>
+                            <li class="nav-block__list-item">
+                                <a class="nav-block__list-link" href="#">2</a>
+                            </li>
+                            <li class="nav-block__list-item">
+                                <a class="nav-block__list-link" href="#">3</a>
+                            </li>
+                            <li class="nav-block__list-item">
+                                <a class="nav-block__list-link" href="#">4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="reg-modal-block">
+            <div class="reg-modal-overlay">
+                <div class="reg-modal">
+                    <h3 class="reg-modal__title">
+                        Всего пара кликов и готово!
+                    </h3>
+                    <form class="reg-modal__form" action="#">
+                        <div class="reg-modal__input-box">
+                            <input class="reg-modal__input" type="email" placeholder="E-Mail" required>
+                        </div>
+                        <div class="reg-modal__input-box">
+                            <input class="reg-modal__input" type="password" placeholder="Пароль" required>
+                        </div>
+                        <button class="reg-modal__btn purple-btn">Зарегистрироваться</button>
+                    </form>
+                    <div class="reg-modal__el">Или</div>
+                    <a class="reg-modal__tel-btn" href="#">
+                        <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M30.7796 0.153301C28.5851 0.975203 1.50826 11.5679 1.10808 11.7651C-0.215103 12.4029 -0.370012 13.2445 0.733716 13.8166C0.843443 13.8758 2.67008 14.4675 4.80654 15.1448L8.68572 16.3743L17.4897 10.7591C22.3371 7.67534 26.397 5.11101 26.5132 5.07156C26.8165 4.96635 27.0747 4.97293 27.1909 5.09786C27.2748 5.18334 27.2813 5.22279 27.2103 5.34772C27.1715 5.43319 23.9507 8.41176 20.0651 11.9624C16.1794 15.5196 12.9844 18.4521 12.9715 18.485C12.9586 18.5179 12.8295 20.2932 12.6811 22.4301L12.41 26.3095L12.7069 26.27C12.8683 26.2503 13.12 26.1648 13.2684 26.0794C13.4234 26.0004 14.4303 25.0668 15.5211 24.0082C16.6054 22.9496 17.5349 22.0619 17.5801 22.0487C17.6253 22.029 19.3551 23.2783 21.427 24.8235C23.4925 26.3687 25.3449 27.7034 25.545 27.7955C26.0678 28.0453 26.6487 28.0651 27.0295 27.8612C27.3716 27.6771 27.7008 27.2169 27.8428 26.7369C27.8945 26.5528 29.0821 20.9836 30.4698 14.3623C32.787 3.34228 33 2.27709 33 1.70505C33 1.16588 32.9806 1.03438 32.8386 0.751646C32.7418 0.547815 32.5675 0.343987 32.3997 0.225632C32.0189 -0.043951 31.3864 -0.0768318 30.7796 0.153301Z"
+                                fill="white" />
+                        </svg>
+                        <span>Войти через Telegram</span>
+                    </a>
+                    <a class="reg-modal__recovery-pass-btn" href="#">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--fk">
+                        <img class="footer__fk-image" src="images/common/f-ks-img.png" alt="free-kassa image">
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__list--hide">
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--email">
+                        <a class="footer__list-link" href="#">
+                            Admin@himera-serch.info
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__list-item--tel">
+                        <a class="footer__list-link" href="#">
+                            Ищите нас в Telegram
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

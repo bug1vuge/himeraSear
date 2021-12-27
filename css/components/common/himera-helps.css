@@ -1,0 +1,99 @@
+/* himera-helps-block */
+.himera-helps__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.himera-helps__items{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.himera-helps__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 320px;
+    margin-right: 30px;
+}
+.himera-helps__item:last-child{
+    margin-right: 0;
+}
+.himera-helps__item-icon{
+    margin-bottom: 20px;
+}
+.himera-helps__item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #515595;
+
+    margin-bottom: 10px;
+}
+.himera-helps__item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media(max-width: 1020px){
+    .himera-helps__items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .himera-helps__item:nth-child(2){
+        margin-right: 0;
+    }
+    .himera-helps__item:nth-child(3){
+        margin-top: 30px;
+    }
+    .himera-helps__item-text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media(max-width: 768px){
+    .himera-helps__items{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .himera-helps__item{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .himera-helps__item:last-child{
+        margin-bottom: 0;
+    }
+    .himera-helps__item:nth-child(3){
+        margin-top: 0;
+    }
+
+}
+@media(max-width: 425px){
+    .himera-helps__title{
+        max-width: 230px;
+        margin: 0 auto 50px;
+    }
+    .himera-helps__item-icon{
+        width: 55px;
+        height: 55px;
+        margin-bottom: 15px;
+    }
+    .himera-helps__item-title{
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .himera-helps__item-text{
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

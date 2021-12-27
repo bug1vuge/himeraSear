@@ -1,0 +1,139 @@
+/* questions-block */
+.questions__title{
+    max-width: 1145px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.accordion-block{
+    padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 65px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.accordion-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+.accordion-item:last-child{
+    margin-bottom: 0;
+}
+.accordion-item__content{
+    max-width: 846px;
+    width: 100%;
+
+    padding: 10px 0 20px;
+    border-bottom: 2px solid rgba(81, 85, 149, 0.2);
+    margin-right: 30px;
+}
+
+.accordion-item:last-child .accordion-item__content{
+    border-bottom: none;
+}
+
+.accordion-item__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #515595;
+}
+.accordion-item__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #515595;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    max-width: 770px;
+}
+.accordion-item__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 3px solid #515595;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.accordion-item__btn svg{
+    transition: all 0.4s ease;
+    width: 29px;
+    height: 27px;
+}
+
+.accordion-item.active .accordion-item__text{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    margin-top: 17px;
+}
+.accordion-item.active .accordion-item__btn svg{
+    transform: rotate(-45deg);
+    transition: all 0.4s ease;
+}
+
+@media(max-width: 1024px) {
+    .accordion-block{
+        padding: 30px;
+    }
+    .accordion-item__title{
+        max-width: 630px;
+    }
+    .accordion-item__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .accordion-item__btn{
+        width: 50px;
+        height: 50px;
+    }
+    .accordion-item__btn svg{
+        width: 25px;
+        height: 23px;
+    }
+    .accordion-item.active .accordion-item__text{
+        margin-top: 10px;
+    }
+}
+@media(max-width: 768px){
+    .accordion-block{
+        padding: 20px;
+    }
+    .accordion-item{
+        display: block;
+    }
+    .accordion-item__content{
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .accordion-item__title{
+        font-size: 18px;
+        line-height: 23px; 
+        max-width: 80%;
+    }
+    .accordion-item__text{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .accordion-item__btn{
+        display: none;
+    }
+}
+@media(max-width: 425px){
+    .accordion-item__title{
+        max-width: 100%;
+    }
+}
